@@ -5,8 +5,6 @@ import threading
 import subprocess
 import random
 
-subprocess.run(['export', 'DISPLAY=:1'])
-
 # 特定のGIFファイルのパスを指定
 gif_path = "images/meow_rave.gif"
 image_folder = "images"
