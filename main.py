@@ -6,7 +6,11 @@ import subprocess
 import random
 
 # 特定のGIFファイルのパスを指定
-gif_path = "images/meow_rave.gif"
+gif_path = input("GIFファイル名を入力してください: ")
+if gif_path == "":
+    gif_path = "images/meow_rave.gif"
+else:
+    gif_path = "images/" + gif_path
 image_folder = "images"
 
 class GifDisplayApp:
