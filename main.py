@@ -143,6 +143,9 @@ def listen_for_input(app):
             elif command == "s":
                 files = [f for f in os.listdir(image_folder) if f.endswith('.gif')]
                 print(files)
+            elif command == "full":
+                app.toggle_fullscreen()
+        
 
         except EOFError:
             break
