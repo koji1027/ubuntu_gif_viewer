@@ -2,7 +2,10 @@ import tkinter as tk
 from PIL import Image, ImageTk, ImageSequence
 import os
 import threading
+import subprocess
 import random
+
+subprocess.run(['export', 'DISPLAY=:1'])
 
 # 特定のGIFファイルのパスを指定
 gif_path = "images/meow_rave.gif"
